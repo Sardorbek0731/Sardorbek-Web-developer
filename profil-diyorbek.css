@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background: #049c6f;
+    height: 100px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+form {
+    display: flex;
+    margin: 0 40px;
+}
+.title h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #049c6f;
+}
+.menyu-hr {
+    width: 90%;
+    margin: 50px auto;
+}
+.profil__all {
+    display: flex;
+    flex-direction: column;
+}
+.first__profil {
+    display: flex;
+    box-shadow: 0 0 10px #797979;
+    border-top: 4px solid #049c6f;
+    border-left: 4px solid #049c6f;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    border-right: 4px solid #049c6f;
+    padding: 40px 40px;
+    margin: 100px auto;
+    margin-bottom: 0;
+}
+.first__profil-img img {
+    width: 180px;
+    height: 240px;
+    border: 5px solid #01cafe;
+}
+.first__profil__link {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 30px;
+}
+.first__profil h1 {
+    font-size: 33px;
+    color: #049c6f;
+    font-family: sans-serif;
+}
+.first__profil__link a {
+    text-align: center;
+    text-decoration: none;
+}
+.first__profil__icons {
+    display: flex;
+    margin: 10px auto;
+}
+.youtube a {
+    margin-left: 5px;
+    color: red;
+}
+.youtube a:hover {
+    color: red;
+}
+.twitter {
+    margin-left: 5px;
+}
+.facebook {
+    margin-left: 5px;
+}
+.github a {
+    margin-left: 5px;
+    color: black;
+}
+.github a:hover {
+    color: black;
+}
+.first__profil__link-hr {
+    width: 200px;
+    margin: 0 auto;
+}
+.number {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.number h3 {
+    font-size: 23px;
+    font-family: cursive;
+    color: #049c6f;
+}
+.number a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font-size: 17px;
+}
+
+
+.manzil svg {
+    color: red;
+}
+.first__profil__linkeden {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.manzil h5 {
+    color: #049c6f;
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.manzil h5 svg {
+    margin-top: -5px;
+}
+.manzil h6 {
+    text-align: center;
+}
+.web-sayt a {
+    text-decoration: none;
+}
+.profil-haqida {
+    margin: 30px 0;
+    box-shadow: 0 0 10px #797979;
+    border-bottom: 4px solid #049c6f;
+    border-right: 1px solid rgb(206, 206, 206);
+    border-top: 1px solid rgb(206, 206, 206);
+    border-left: 4px solid #049c6f;
+    padding: 40px 38px;
+}
+.men-haqimda h2 {
+    font-size: 25px;
+    font-family: cursive;
+    color: #049c6f;
+}
+.profil-va-davlat {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.education {
+    display: flex;
+    flex-direction: column;
+}
+.education__item {
+    display: flex;
+}
+.education-title h4 {
+    font-size: 25px;
+    color: #049c6f;
+    font-family: cursive;
+}
+.first-education__column {
+    display: flex;
+    flex-direction: column;
+}
+.first-education__column a {
+    color: rgb(19, 93, 68);
+    text-decoration: none;
+}
+.first-education__column a:hover {
+    color: rgb(19, 93, 68);
+}
+.second-edugation__column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+.second-edugation__column a {
+    color: rgb(19, 93, 68);
+    text-decoration: none;
+}
+.second-edugation__column a:hover {
+    color: rgb(19, 93, 68);
+}
+.mahorat svg {
+    color: #049c6f;
+}
+.men-haqimda h5 {
+    color: black;
+    font-size: 15px;
+}
+.katta-manzil {
+    margin: 30px 0;
+    margin-left: 25px;
+    box-shadow: 0 0 10px #797979;
+    border-bottom: 4px solid #049c6f;
+    border-right: 4px solid #049c6f;
+    border-left: 1px solid rgb(206, 206, 206);
+    border-top: 1px solid rgb(206, 206, 206);
+    padding: 40px 50px;
+}
+.davlat h1 {
+    color: #049c6f;
+    font-size: 25px;
+    font-family: cursive;
+}
+.viloyat h1 {
+    color: #049c6f;
+    font-size: 25px;
+    font-family: cursive;
+}
+.qishloq h1 {
+    color: #049c6f;
+    font-size: 25px;
+    font-family: cursive;
+}
+.davlat h5 {    
+    color: rgb(61, 61, 61);
+    padding-bottom: 20px;
+}

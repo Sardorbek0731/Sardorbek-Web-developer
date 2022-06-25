@@ -1,0 +1,208 @@
+::-webkit-scrollbar {
+    width: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #049c6f;
+}
+body {
+    padding: 0;
+}
+
+.home__navigation {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    position: fixed;
+    z-index: 3;
+    width: 20%;
+    padding: 0;
+    justify-content: center;
+    background-color: rgb(32, 43, 47);
+    box-shadow: 0 0 7px #000;
+}
+.home__navigation .nav-link {
+    font-size: 17px;
+    color: #01cafe;
+    position: relative;
+    transition: all 1s;
+}
+.home__navigation .nav-link:hover {
+    color: #049c6f;
+}
+.home__navigation .nav-link:focus {
+    background-color: #000;
+}
+.home__navigation .nav-link::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #049c6f;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    bottom: 0;
+    transform-origin: left;
+    transition: all 1s;
+}
+.home__navigation .nav-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.lesson__navigation__angle {
+    display: none;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(32, 43, 47);
+    box-shadow: 0 0 7px #000;
+    left: 0;
+    padding: 0;
+    top: 50px;
+    width: 49.5px;
+    height: 90px;
+    transition: all 1s;
+}
+.lesson__navigation__angle:hover {
+    background-color: #000;
+}
+
+.lesson__title {
+    text-decoration: none;
+}
+.lesson__title i {
+    color: #01cafe;
+}
+.lesson__title p {
+    transform: rotate(90deg);
+    color: #01cafe;
+}
+
+.education__menyu {
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    float: right;
+    list-style: none;
+    padding: 0 0;
+    margin: 0 0;
+    height: 100vh;
+    z-index: 15;
+    align-items: center;
+    background-color: rgb(38, 58, 65);
+    box-shadow: 0 0 14px #3f3f3f;
+    transition: all 0.5s ease-in-out;
+}
+.education__menyu:hover {
+    background-color: #000;
+}
+.education__menyu li a {
+    font-size: 20px;
+    color: #01cafe;
+}
+.education__menyu:hover .education__navigation {
+    right: 0;
+}
+.education__navigation {
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    list-style: none;
+    align-self: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    transition: all 1s  ease-in;
+    right: -100%;
+    overflow-y: scroll;
+    top: 0;
+}
+.education__navigation .nav-link {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*  Second navigation  */
+.nav-column {
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    overflow-y: scroll;
+    box-shadow: 0 0 14px #797979;
+    width: 20%;
+    height: 100vh;
+    background-color: white;
+    padding-top: 50px;
+    padding-left: 0;
+    transition: all 1s ease;
+}
+.nav-column nav ul {
+    padding-left: 0;
+}
+.lesson__navigation__angle:hover .nav-column {
+    left: 0;
+}
+.nav-column .nav-item {
+    list-style: none;
+}
+.nav-column .first-nav {
+    color: rgb(10, 9, 29);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: -10px;
+}
+.nav-column .first-nav:hover {
+    color: rgb(10, 9, 29);
+}
+
+
+
+/*  HOME  */    
+
+.home {
+    padding-top: 40px;
+    width: 84%;
+    display: flex;
+    float: right;
+    justify-content: center;
+    flex-flow: column;
+}
+.home__education__title h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+.home__education__first__img {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 576px) {
+    .education__menyu {
+        height: 40px;
+    }
+    .flex-column {
+        left: -100%;
+    }
+    .home__navigation {
+        width: 130px;
+        height: 40px;
+        left: 50%;
+    }
+    .home {
+        width: 100%;
+    }
+    .home__navigation .nav-link::before {
+        bottom: 1px;
+    }
+    .home__education__first__img img {
+        width: 280px;
+        height: 150px;
+    }
+}

@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightblue;
+}
+
+
+/*  Education__all  */
+
+.education__all {
+    display: flex;
+    flex-direction: column;
+    background: url("./image/kurs-fon.jpg") no-repeat;
+    background-size: cover;
+}
+
+.education__title h1 {
+    color: white;
+    margin: 100px auto;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/*   First-education__row   */
+
+.first-education__row {
+    display: flex;
+    justify-content: center;
+}
+
+.education__html {
+    box-shadow: 0 0 20px rgb(255, 123, 0);
+    padding: 40px 40px;
+    margin-left: 20px;
+    width: 280px;
+    text-align: center;
+    align-self: center;
+    transition: all 1s;
+    background-color: white;
+}
+.education__html:hover {
+    background-color: rgb(251, 155, 66);
+}
+.education__html-img img {
+    width: 200px;
+    height: 180px;
+}
+.education__html form .html__button {
+    background-color: rgb(255, 123, 0);
+    box-shadow: 0 0 10px rgb(253, 208, 60);
+    width: 140px;
+    color: white;
+}
+
+.education__css {
+    box-shadow: 0 0 20px rgb(0, 47, 255);
+    padding: 40px 40px;
+    margin-left: 20px;
+    width: 280px;
+    text-align: center;
+    align-self: center;
+    transition: all 1s;
+    background-color: white;
+}
+.education__css:hover {
+    background-color: rgb(66, 162, 251);
+}
+.education__css-img img {
+    width: 150px;
+    height: 180px;
+}
+
+.education__bootstrap {
+    box-shadow: 0 0 20px rgb(98, 0, 255);
+    margin-left: 20px;
+    padding: 40px 40px;
+    width: 280px;
+    align-self: center;
+    text-align: center;
+    transition: all 1s;
+    padding-top: 23px;
+    background-color: white;
+}
+.education__bootstrap:hover {
+    background-color: rgb(130, 0, 251);
+}
+.education__bootstrap-img {
+    text-align: center;
+    margin-top: 50px;
+}
+.education__bootstrap-img img {
+    width: 150px;
+    height: 150px;
+}
+.education__bootstrap form .bootstrap__button {
+    background-color: rgb(103, 0, 151);
+    color: white;
+    width: 140px;
+}
+
+
+/*  Second-education__row  */
+
+.second-education__row {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.education__sass {
+    box-shadow: 0 0 20px rgb(227, 5, 235);
+    padding: 40px 40px;
+    margin-left: 20px;
+    width: 280px;
+    text-align: center;
+    align-self: center;
+    transition: all 1s;
+    background-color: white;
+}
+.education__sass:hover {
+    background-color: rgb(185, 2, 124);
+}
+.education__sass-img img {
+    width: 150px;
+    height: 180px;
+}
+.education__sass form .sass__button {
+    background-color: rgb(129, 6, 88);
+    box-shadow: 0 0 10px rgb(253, 60, 189);
+    width: 140px;
+    color: white;
+}
+
+.education__javascript {
+    box-shadow: 0 0 20px rgb(251, 255, 0);
+    padding: 40px 40px;
+    margin-left: 20px;
+    width: 280px;
+    text-align: center;
+    align-self: center;
+    transition: all 1s;
+    background-color: white;
+}
+.education__javascript:hover {
+    background-color: rgb(203, 223, 31);
+}
+.education__javascript-img img {
+    width: 150px;
+    height: 180px;
+}
+
+.education__python {
+    box-shadow: 0 0 20px rgb(98, 0, 255);
+    margin-left: 20px;
+    padding: 40px 40px;
+    width: 280px;
+    align-self: center;
+    text-align: center;
+    transition: all 1s;
+    padding-top: 23px;
+    background-color: white;
+}
+.education__python:hover {
+    background: linear-gradient(to top, yellow, rgb(2, 2, 104));
+}
+.education__python-img {
+    text-align: center;
+    margin-top: 50px;
+}
+.education__python-img img {
+    width: 150px;
+    height: 150px;
+}
+.education__python form .python__button {
+    background-color: rgb(37, 15, 73);
+    color: white;
+    width: 140px;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .search {
+        font-size: 30px;
+    }
+    .first-education__row, .second-education__row {
+        flex-flow: column;
+        margin-bottom: 0;
+    } 
+    .education__item {
+        margin-left: 0;
+        margin-bottom: 30px;
+        width: 250px;
+    }
+    .education__html-img {
+        display: flex;
+        justify-content: center;
+    }
+    .search {
+        display: none;
+    }
+}
